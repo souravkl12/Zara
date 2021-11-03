@@ -1,6 +1,6 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/Raashii/bot-setting /root/WhatsAsenaDuplicated
+RUN git clone https://github.com/souravkl12/Zara /root/WhatsAsenaDuplicated
 
 WORKDIR /root/WhatsAsenaDuplicated/
 
