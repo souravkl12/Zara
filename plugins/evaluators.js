@@ -329,7 +329,7 @@ Rashi.tozara({on: 'text', fromMe: false,onlyPm:true , deleteCommand: false}, (as
         let regex6 = new RegExp('supporters ')
         let regex7 = new RegExp('Who are you ')
         let regex8 = new RegExp('movie ')
-        let regex9 = new RegExp('Git ')
+        let regex9 = new RegExp(Pinky.OB_NAME)
         let regex10 = new RegExp(Pinky.OA_NAME)
         if (regex1.test(message.message)) {              
             await message.client.sendMessage(message.jid,plk1, MessageType.text, {quoted: message.data })
@@ -356,7 +356,7 @@ Rashi.tozara({on: 'text', fromMe: false,onlyPm:true , deleteCommand: false}, (as
            await message.client.sendMessage(message.jid,plk8, MessageType.text, {quoted: message.data })
         }
          else if (regex9.test(message.message)) {
-   await message.client.sendMessage(message.jid,plk9, MessageType.text, {quoted: message.data })
+   await message.client.sendMessage(message.jid,Pinky.OB_REPLY, MessageType.text, {quoted: message.data })
         }
         else if (regex10.test(message.message)) {
    await message.client.sendMessage(message.jid,Pinky.OA_REPLY, MessageType.text, {quoted: message.data })
